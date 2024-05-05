@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SPOORTHY SCHOOL</title> 
+<link rel="stylesheet" href="style.css">
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+<link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-a60ddbceb7292f11c9e430d067b1eb9f.css?vsn=d"
+    >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+      >
+    
+    
+    
+    
+<style>
+    .centerImage{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+</style>   
+    
+</head>
+<body>
+<section class="sub-header">
+<nav>
+ <a href="scs.html"><img src="images/logo.png"></a>
+    <div class="nav-links">
+    <ul>
+<li><a href="scs.html">HOME</a></li>
+<li><a href="adm.html">ENROLL</a></li> 
+<li><a href="gallery.html">YOUTUBE</a></li>
+ <li><a href="events.html">GALLERY</a></li>   
+ <li><a href="contact.html">CONTACT</a>   
+
+</ul>    
+ 
+</div>
+
+</nav>   
+
+
+</section>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 30px 0;
+  display: inline-block;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=SUBMIT] {
+  width: 100%;
+  background-color: yellow;
+  color: black;
+    font-size: 20px;
+  padding: 14px 20px;
+  margin: 8px 20;
+  border-color: black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=SUBMIT]:hover {
+  background-color: red;
+}
+
+div {
+    border-color: black;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 8px;
+    box-sizing: border-box;
+    
+}
+    body{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/imgf.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        
+    }
+    body{
+        font-size: 30px;
+        font-family: sans-serif;
+        text-align: match-parent;
+        color: palevioletred;
+    }
+    body{
+        border-color: aliceblue;
+        border-top-color: aliceblue;
+        border: 2px solid #fff;
+    }
+    <h1>SPOORTHY CONCEPT SCHOOL</h1>
+<h2>ENROLL FOR ADMISSION</h2>
+<head>
+    
+</style>
+<body>
+<h1>SPOORTHY CONCEPT SCHOOL</h1>
+<h2>ENROLL FOR ADMISSION</h2>
+
+<div>
+    
+  <form method="POST" name="google-sheet">
+    <label for="fname">STUDENT NAME</label>
+    <input type="text" id="fname" name="STUDENT NAME" placeholder="Enter name..">
+
+    <label for="lname">PARENT NAME</label>
+    <input type="text" id="lname" name="PARENT NAME" placeholder="Enter name..">
+
+    <label for="lname">MOBILE</label>
+    <input type="text" id="lname" name="MOBILE" placeholder="Enter Number..">
+      <label for="vname">VILLAGE</label>
+    <input type="text" id="vname" name="VILLAGE" placeholder="ENTER NAME..">
+      <label for="class">CLASS</label>
+    <select id="class" name="CLASS">
+      <option value="NURSERY">NURSERY</option>
+      <option value="LKG">LKG</option>
+      <option value="UKG">UKG</option>
+      <option value="1st class">1st class</option>
+      <option value="2nd class">2nd class</option>
+      <option value="3rd class">3rd class</option>
+<option value="4th class">4th class</option>
+<option value="5th class">5th class</option>
+<option value="6th class">6th class</option>
+<option value="7th class">7th class</option>
+    </select>
+   
+  
+    <input type="SUBMIT" value="SUBMIT">
+  </form>
+</div>
+    
+    <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzQmcGwBqOwVQRM74OLV_n6Ye1kfIqYuE3CsepbS27wrugoQWtA9b1zyEBWe91Dez4i3A/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+
+</body>
+</html>
+
+
